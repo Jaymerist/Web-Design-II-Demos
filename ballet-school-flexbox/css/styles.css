@@ -1,0 +1,98 @@
+body {
+    color: #333;
+    font-family: 'Lato', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+}
+
+header nav {
+    align-items: center;
+    box-shadow: 0 0 5px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+header img {
+    width: 4rem;
+}
+
+header section {
+    background: url('../img/hero-banner.webp') right / cover;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    padding: 6rem;
+}
+
+.lead {
+    backdrop-filter: blur(3px);
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 0.5rem;
+    max-width: 60ch;
+    padding: 1rem;
+}
+
+.lead h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.lead p{
+    margin: 2rem 0;
+}
+
+.lead .btn{
+    background-color: #ea4949;
+    border-radius: 3rem;
+    box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.2);
+    color: white;
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+.lead .btn:hover{
+    text-decoration: underline;
+}
+
+.info{
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    text-shadow: 1px 1px #333;
+}
+
+.info h2{
+    font-size: 1.25rem;
+    width: 100%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.info div{
+    margin: 1rem;
+}
+
+.info h3{
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.info h2,
+.info h3{
+    text-shadow: 2px 2px #333;
+}
