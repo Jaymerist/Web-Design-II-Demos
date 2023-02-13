@@ -1,0 +1,177 @@
+/* Colour Palette
+
+Red    #e24c3b
+White  #fbf3ef
+Blue   #0088e0
+
+*/
+
+/* Universal styles and Typography */
+
+body {
+  background: url("../img/pole-closeup-mobile.webp") center / cover no-repeat;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: 'Arvo', serif;
+}
+
+/* Mobile Layout */
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a{
+  color: #222;
+  display: block;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+svg{
+  width: 5rem;
+}
+
+nav svg path{
+  fill: #222;
+}
+
+/*Main Layout*/
+
+main > h2{
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  padding: 3rem 0;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #222;
+}
+
+section{
+  margin: 0 auto;
+}
+
+.inner-container{
+  padding: 0 1rem;
+}
+
+.col{
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+
+section .col img{
+  margin: 1rem auto;
+  max-width: 4.5rem;
+}
+
+.col p a{
+  background-color: #ec4c3b;
+  border-radius: 0.3rem;
+  box-shadow: 0 5px 0 #ba2d1e;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.col p a:active {
+  box-shadow: none;
+  transition: 0.2s all ease;
+  transform: translateY(5px);
+}
+
+.col p{
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 925px){
+  nav{
+    background-color: #fbf3ef;
+  }
+
+  nav ul li:nth-child(3),
+  nav ul li:nth-child(5){
+    background-color: #ec4c3d;
+  }
+
+  nav ul li:nth-child(2){
+    background-color: #0088e0;
+  }
+
+  nav ul li:nth-child(3){
+    order: -1;
+  }
+}
+
+section .col img{
+  margin: 1rem auto;
+  max-width: 4.5rem;
+}
+
+@media screen and (min-width: 926px){
+  body{
+    background: url('../img/pole-closeup.webp') center / cover no-repeat;
+  }
+
+  nav{
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  nav ul{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav ul li a{
+    color: #fff;
+  }
+
+  nav svg path{
+    fill: #fff;
+  }
+
+  .inner-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 1280px;
+  }
+
+  .col{
+    margin: 1rem;
+    max-width: calc(100% / 2 - 2rem);
+  }
+
+  .grow{
+    flex: 1 0 65%;
+  }
+
+  .shrink{
+    flex: 0 1 35%
+  }
+}
+
