@@ -1,0 +1,49 @@
+body{
+    background-color: #424f4b;
+    font-family: 'Comic Sans MS', 'Dyslexia Sns', sans-serif;
+    min-height: 100vh;
+    color: #eee;
+}
+
+.container{
+    position: relative ;
+    width: calc(100% - 4rem);
+    margin-top: 4rem;
+    min-height: calc(100vh - 4rem);
+    margin: auto;
+    max-width: 1060px;
+}
+
+.container img{
+    width: 55%;
+    position: absolute;
+}
+
+.container img:first-of-type{
+    top: 2rem;
+    right: 2rem;
+}
+
+.container img:last-of-type{
+    bottom: 2rem;
+    left: 2rem;
+}
+
+h1{
+    color: #14150d;
+    font-size: 3rem;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 10%;
+    width: 250px;
+    line-height: 3rem;
+}
+
+h1 span{
+    color: #e3e8e0;
+    font-size: 4rem;
+    display: block;
+    text-align: right;
+    text-shadow: 1px 1px 1px black;
+}
